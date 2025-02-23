@@ -1,10 +1,8 @@
 import CounterCard from '@/components/counter/CounterCard'
-import { ThemeToggle } from '@/components/ui/ThemeToggle'
 
 export default function Home() {
   return (
-    <main>
-      <ThemeToggle />
+    <main className='flex flex-col justify-center items-center min-h-screen'>
       <CounterCard />
     </main>
   )
