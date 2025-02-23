@@ -4,9 +4,7 @@ import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 import { Switch } from '@heroui/react'
 
-interface IconProps extends React.SVGProps<SVGSVGElement> {}
-
-const MoonIcon = (props: IconProps) => {
+const MoonIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
       aria-hidden='true'
@@ -25,9 +23,7 @@ const MoonIcon = (props: IconProps) => {
   )
 }
 
-interface SunIconProps extends React.SVGProps<SVGSVGElement> {}
-
-const SunIcon = (props: SunIconProps) => {
+const SunIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
       aria-hidden='true'
