@@ -1,6 +1,13 @@
 import type { Metadata } from 'next'
-import './globals.css'
 import { Providers } from './providers'
+import { Outfit } from 'next/font/google'
+import './globals.css'
+
+const outfit = Outfit({
+  subsets: ['latin'],
+  display: 'swap',
+  // weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+})
 
 export const metadata: Metadata = {
   title: 'Benjamins Counter App',
@@ -13,7 +20,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='de'>
+    <html
+      lang='de'
+      className={outfit.className}
+    >
       <body>
         <Providers>{children}</Providers>
       </body>
